@@ -324,7 +324,6 @@ class InputBox:
             if self.active:
                 if event.key == pg.K_RETURN:
                     player.set_name(self.text)
-                    print(player.get_name())
                     self.text = ''
                 elif event.key == pg.K_BACKSPACE:
                     self.text = self.text[:-1]
@@ -405,7 +404,6 @@ while running:
     if start_game:
         if game_over:
             game_over = False
-            print('save')
             sqlite_manager.insert(player_name=player.get_name(), score=score)
 
         show_go_screen()
