@@ -8,7 +8,7 @@
 `pip install -r requirements.txt`
 
 ## Run(Inside venv)
-`python game.py`
+`python -m game.main`
 
 ## Logging
 + Db log: `logs/db.log` (Изначально папки `logs` нет, она создается автоматически при запуске игры)
